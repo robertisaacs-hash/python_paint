@@ -5,6 +5,7 @@ A simple yet functional digital paint application built with Python's tkinter li
 ## Features
 
 - **Freehand Drawing**: Draw smoothly using mouse click and drag
+- **Save Functionality**: Save your artwork as PNG or JPEG files
 - **Clear Canvas**: Reset the drawing surface with a single button click
 - **Responsive Interface**: Real-time drawing with immediate visual feedback
 - **Cross-Platform**: Works on Windows, macOS, and Linux systems
@@ -13,6 +14,7 @@ A simple yet functional digital paint application built with Python's tkinter li
 
 - Python 3.6 or higher
 - tkinter (usually included with Python installations)
+- Pillow (PIL) for image processing and saving functionality
 
 ## Installation
 
@@ -22,12 +24,17 @@ A simple yet functional digital paint application built with Python's tkinter li
    cd python_paint
    ```
 
-2. **Verify Python installation**:
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Verify Python installation**:
    ```bash
    python --version
    ```
 
-3. **Check tkinter availability** (optional):
+4. **Check tkinter availability** (optional):
    ```bash
    python -c "import tkinter; print('tkinter is available')"
    ```
@@ -43,8 +50,9 @@ python paint.py
 ### How to Use
 
 1. **Drawing**: Click and hold the left mouse button while moving the mouse to draw
-2. **Clear Canvas**: Click the "Clear" button to erase all drawings and start fresh
-3. **Exit**: Close the application window to exit
+2. **Save Drawing**: Click the "Save" button to save your artwork as PNG or JPEG file
+3. **Clear Canvas**: Click the "Clear" button to erase all drawings and start fresh
+4. **Exit**: Close the application window to exit
 
 ## Technical Details
 
@@ -58,6 +66,7 @@ python paint.py
 ```
 python_paint/
 ├── paint.py          # Main application file
+├── requirements.txt  # Python dependencies
 └── README.md         # Project documentation
 ```
 
@@ -78,10 +87,11 @@ This project is open source and available under the [MIT License](LICENSE).
 Potential improvements for future versions:
 
 - Color palette selection
-- Adjustable brush sizes
-- Save/load functionality
+- Adjustable brush sizes  
+- Load existing images for editing
 - Different drawing tools (rectangle, circle, etc.)
 - Undo/redo functionality
+- Multiple file format support
 
 ## Author
 
